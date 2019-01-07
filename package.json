@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon build/dev.js",
     "build": "node build/clean.js && babel src -d app",
-    "start": "node app/index.js",
+    "start": "PORT=8081 pm2 start app/index.js --name koa-temp",
     "lint": "./node_modules/.bin/eslint ./src",
     "lintFix": "./node_modules/.bin/eslint src --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,7 +17,8 @@
     "axios": "^0.18.0",
     "koa": "^2.6.2",
     "koa-logger": "^3.2.0",
-    "koa-router": "^7.4.0"
+    "koa-router": "^7.4.0",
+    "pm2": "^3.2.4"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
