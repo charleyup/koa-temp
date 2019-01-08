@@ -1,5 +1,6 @@
 import KoaRouter from "koa-router";
 const router = new KoaRouter();
-import index from "./constroller/index.js";
-router.get("/", index.index);
+import IndexController from "./controller/index.js";
+router.prefix("/api");
+router.get("/", IndexController.index);
 export default router;

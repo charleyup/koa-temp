@@ -9,7 +9,7 @@ describe("#test koa app", () => {
     });
 
     it("test GET /", async () => {
-        const res = await request(server).get("/").expect("Hello World!");
+        const res = await request(server).get("/api").expect("Hello World!");
     });
 
     it("test GET 404", async () => {
