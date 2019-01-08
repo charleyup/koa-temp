@@ -9,7 +9,7 @@
     "start": "PORT=8081 pm2 start app/index.js --name koa-temp",
     "lint": "./node_modules/.bin/eslint ./src",
     "lintFix": "./node_modules/.bin/eslint src --fix",
-    "test": "./node_modules/mocha/bin/mocha --compilers js:babel-core/register test/unit/*.test.js"
+    "test": "./node_modules/mocha/bin/mocha --compilers js:babel-core/register test/*.test.js"
   },
   "author": "",
   "license": "ISC",
