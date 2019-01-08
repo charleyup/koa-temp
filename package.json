@@ -9,7 +9,7 @@
     "start": "PORT=8081 pm2 start app/index.js --name koa-temp",
     "lint": "./node_modules/.bin/eslint ./src",
     "lintFix": "./node_modules/.bin/eslint src --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha --compilers js:babel-core/register test/unit/*.test.js"
   },
   "author": "",
   "license": "ISC",
@@ -34,7 +34,9 @@
     "babel-register": "^6.26.0",
     "eslint": "^5.12.0",
     "husky": "^1.3.1",
+    "mocha": "^5.2.0",
     "nodemon": "^1.18.9",
-    "rimraf": "^2.6.3"
+    "rimraf": "^2.6.3",
+    "supertest": "^3.3.0"
   }
 }
