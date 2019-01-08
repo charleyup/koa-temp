@@ -1,7 +1,7 @@
 {
-  "name": "wechat",
+  "name": "koa-temp",
   "version": "0.0.1",
-  "description": "",
+  "description": "a koa2 project template",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon build/dev.js",
@@ -11,7 +11,7 @@
     "lintFix": "./node_modules/.bin/eslint src --fix",
     "test": "./node_modules/mocha/bin/mocha --require babel-core/register test/*.test.js"
   },
-  "author": "",
+  "author": "charleyup",
   "license": "ISC",
   "husky": {
     "hooks": {
